@@ -1,0 +1,27 @@
+Configuring Spring Boot RESTful Web Service Using Spring Profiles:
+
+Connecting Spring Boot REST API with different H2 databases based on active Spring Profile defined in application.yml file. 
+Creating different profiles based on the requirement,  such as dev, qa, prod and providing the Database connection configurations accordingly.
+
+Configuring Auto Generation of Swagger Documentation:
+http://localhost:8081/swagger-ui/index.html
+
+REST End Points:
+===============
+GET: localhost:8081/traveldestinations/message
+
+POST: localhost:8081/traveldestinations
+{
+  "placeName": "California",
+  "country": "USA"
+}
+
+GET: localhost:8081/traveldestinations/{country}
+
+GET: localhost:8081/traveldestinations/id/{id}
+
+GET: localhost:8081/traveldestinations
+
+PUT: localhost:8081/traveldestinations/{id}
+
+DELETE: localhost:8081/traveldestinations/{id}
