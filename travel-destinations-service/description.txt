@@ -1,0 +1,9 @@
+Building Stand-Alone, Production-Grade Spring based Spring Boot (2.7.0)  CRUD REST API
+
+Creating Spring Boot CRUD REST API with Spring Data, JPA, Hibernate, Bean Validation Constraints, H2 Database Configuration,
+Exploring default Logging options available in Spring Boot, Reducing boilerplate code with project Lombok, Applying Global
+Exception Handling mechanism, Exposing Endpoints and let our service to communicate with other products and services 
+and Configuring Auto Generation of Swagger Documentation.
+
+Configuring Auto Generation of Swagger Documentation:
+http://localhost:8081/swagger-ui/index.html
