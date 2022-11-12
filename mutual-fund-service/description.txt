@@ -1,0 +1,7 @@
+Getting Started with Spring Framework - Implementing IoC & Building REST service
+Learn how Spring Framework provides a comprehensive programming and configuration model for building modern Java-based enterprise applications and how it provides infrastructural support at the application level.
+
+REST End Points:
+===============
+GET:  localhost:8080/mutualfund-scheme
+GET:  localhost:8080/mutualfund-scheme/terms
