@@ -4,6 +4,9 @@ Building Data-Driven REST Spring Boot service to communicate with other products
 Using an object/relational mapping facility for managing relational data in Java applications with JPA,  Implementing JPA based repositories
 using Spring Data JPA,  Using ORM framework, Hibernate with BI & UNI Directional Mappings.
 
+Configuring Auto Generation of Swagger Documentation:
+http://localhost:8081/swagger-ui/index.html
+
 REST End Points:
 ================
 
