@@ -1,0 +1,63 @@
+Diving Deep Into Spring Data JPA, Hibernate BI & UNI Directional O/R Mappings & Querying JPA Entities with JPQL using @Query (CRUD):
+
+Building Data-Driven REST Spring Boot service to communicate with other products and services without having to know how they’re implemented.
+Using an object/relational mapping facility for managing relational data in Java applications with JPA,  Implementing JPA based repositories
+using Spring Data JPA,  Using ORM framework, Hibernate with BI & UNI Directional Mappings.
+
+REST End Points:
+================
+
+savings-account service
+=======================
+POST:  localhost:8081/savings-account
+Body raw (JSON)
+{
+    "holderName": "Rick",
+    "accountType": "Premier Savings",
+    "annualPercentageYield": 9.0,
+    "minimumBalanceToAvailAPY": 1000.00,
+    "minimumBalanceToOpenAccount": 1500.00,
+    "currentValue": 1000.00
+}
+
+
+mutual-fund service
+===================
+POST: localhost:8081/mutual-fund-portfolio
+Body raw (json)
+
+{  
+    "holderName": "Rick",
+    "totalInvestedValue": 0.00,
+    "totalCurrentValue": 0.00,
+    "gainOrLoss" : 0.0,
+    "savingsAccount" : {
+	 "id": 1
+    }
+}
+GET: localhost:8081/savings-account/{savings-account-id}/mutual-fund-portfolio
+
+
+POST: localhost:8081/mutual-fund
+Body raw (json)
+{
+    "fundName": "Abc Fund Equity Fund",
+    "schemeType": "Equity",
+    "fundType": "Regular Growth",
+    "nav": 10.09,
+    "investedValue": 1000.00,
+    "currentValue": 0.00,
+    "totalUnits": 800,
+    "freeUnits": 800,
+    "lockedUnits": 0,
+    "investmentDate": "2022 10 05",
+    "investmentType": "Lumpsum",
+    "transactionDetails": "Paying To MF",
+    "debitOrCredit": "Credit",
+    "mutualFundPortfolio": {
+        "id": 2
+    }
+}
+
+
+GET: localhost:8081/mutual-fund-portfolio/{mutualFundPortfolio-id} /mutual-funds
