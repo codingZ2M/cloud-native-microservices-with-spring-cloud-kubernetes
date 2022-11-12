@@ -4,5 +4,6 @@ Creating multiple Spring Boot CRUD REST Services for a banking domain with Sprin
 Bean Validation Constraints, H2 Database Configuration, Exploring default Logging options available in Spring Boot, Reducing boilerplate
 code with project Lombok, Applying Global Exception Handling mechanism, Exposing Endpoints and let our service to communicate with other 
 products and services with advanced REST API features such as  generating Documentation for REST API, Internationalization - i18N,
-Versioning, HATEOAS, Static & Dynamic Filtering, Monitoring REST API.
+Versioning, HATEOAS, Static & Dynamic Filtering, Monitoring REST API. Building a REST Client with Spring Cloud OpenFeign(Declarative REST Client)
+to invoke services over HTTP.
 
