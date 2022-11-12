@@ -1,0 +1,82 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: mappings
+--- # Creating multiple documents in single yml file        
+
+server:
+  port: 8081
+---
+
+spring:
+  application:
+    name: Travel Destinations Service  
+---
+
+welcome:
+  message: 'Welcome! Find Your Favourite Travel Destinations! '
+---
+
+spring:
+  profiles: 
+    active: prod
+---
+
+spring:
+  config:
+     activate:
+       on-profile: dev
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: 
+    url: jdbc:h2:mem:testdb-dev
+    username: sa
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: true  
+---
+
+spring:
+  config:
+     activate:
+       on-profile: qa
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: 
+    url: jdbc:h2:mem:testdb-qa
+    username: sa
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: true
+---
+
+spring:
+  config:
+     activate:
+       on-profile: prod
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: 
+    url: jdbc:h2:mem:testdb-prod
+    username: sa
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  
+  
