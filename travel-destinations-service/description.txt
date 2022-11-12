@@ -10,59 +10,21 @@ http://localhost:8081/swagger-ui/index.html
 
 REST End Points:
 ===============
+GET: localhost:8081/traveldestinations/message
 
-savings-account service
-=======================
-POST:  localhost:8081/savings-account
-Body raw (JSON)
+POST: localhost:8081/traveldestinations
 {
-    "holderName": "Rick",
-    "accountType": "Premier Savings",
-    "annualPercentageYield": 9.0,
-    "minimumBalanceToAvailAPY": 1000.00,
-    "minimumBalanceToOpenAccount": 1500.00,
-    "currentValue": 1000.00
+  "placeName": "California",
+  "country": "USA"
 }
 
+GET: localhost:8081/traveldestinations/{country}
 
-mutual-fund service
-===================
-POST: localhost:8081/mutual-fund-portfolio
-Body raw (json)
+GET: localhost:8081/traveldestinations/id/{id}
 
-{  
-    "holderName": "Rick",
-    "totalInvestedValue": 0.00,
-    "totalCurrentValue": 0.00,
-    "gainOrLoss" : 0.0,
-    "savingsAccount" : {
-	 "id": 1
-    }
-}
-GET: localhost:8081/savings-account/{savings-account-id}/mutual-fund-portfolio
+GET: localhost:8081/traveldestinations
 
+PUT: localhost:8081/traveldestinations/{id}
 
-POST: localhost:8081/mutual-fund
-Body raw (json)
-{
-    "fundName": "Abc Fund Equity Fund",
-    "schemeType": "Equity",
-    "fundType": "Regular Growth",
-    "nav": 10.09,
-    "investedValue": 1000.00,
-    "currentValue": 0.00,
-    "totalUnits": 800,
-    "freeUnits": 800,
-    "lockedUnits": 0,
-    "investmentDate": "2022 10 05",
-    "investmentType": "Lumpsum",
-    "transactionDetails": "Paying To MF",
-    "debitOrCredit": "Credit",
-    "mutualFundPortfolio": {
-        "id": 2
-    }
-}
-
-
-GET: localhost:8081/mutual-fund-portfolio/{mutualFundPortfolio-id} /mutual-funds
+DELETE: localhost:8081/traveldestinations/{id}
 
