@@ -10,11 +10,13 @@ POST:  localhost:8081/savings-account/v1 // Versioning with URL
 or
 POST:  localhost:8081/savings-account?version=2  // Versioning with Request Param
 {
-    "holderName": "Jhon",
-    "accountType": "Premier Savings",
-    "currentValue": 0.00
+    "holderName":"Raj",
+    "accountType":"Classic Checking",
+    "annualPercentageYield":"25.00",
+    "minimumBalanceToAvailAPY": "5001",
+    "minimumBalanceToOpenAccount": "5001",
+    "currentValue":"9000"	
 }
-
 
 GET: localhost:8081/savings-account/all/v1
 
