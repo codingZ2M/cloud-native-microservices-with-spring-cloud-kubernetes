@@ -7,3 +7,80 @@ products and services with advanced REST API features such as  generating Docume
 Versioning, HATEOAS, Static & Dynamic Filtering, Monitoring REST API. Building a REST Client with Spring Cloud OpenFeign(Declarative REST Client)
 to invoke services over HTTP.
 
+REST End Points:
+================
+
+savings-account service
+=======================
+
+POST:  localhost:8081/savings-account/v1 // Versioning with URL
+or
+POST:  localhost:8081/savings-account?version=2  // Versioning with Request Param
+{
+    "holderName":"Raj",
+    "accountType":"Classic Checking",
+    "annualPercentageYield":"25.00",
+    "minimumBalanceToAvailAPY": "5001",
+    "minimumBalanceToOpenAccount": "5001",
+    "currentValue":"9000"	
+}
+
+GET: localhost:8081/savings-account/all/v1
+
+POST: localhost:8081/savings-account/getSavingsAccount/v1
+
+{
+    "id": 1
+}
+
+
+POST: localhost:8081/savings-account/payment-transaction
+{
+    "transactionDate": "18-12-22",
+    "transactionDetails": "Self Deposit",
+    "amount": 1300.00,
+    "debitOrCredit": "Credit",
+    "savingsAccountId": 1
+}
+
+GET: localhost:8081/savings-account/{savings-account-id}/payment-transactions
+=======================================================================================================
+
+
+mutual-fund service
+====================
+POST: localhost:8083/mutual-fund-portfolio
+Body raw (json)
+
+{
+    "holderName": "Rick",
+    "totalInvestedValue": 0.00,
+    "totalCurrentValue": 0.00,
+    "gainOrLoss": 0.00
+}
+
+
+POST: localhost:8083/mutual-fund
+Body raw (json)
+
+{
+    "fundName": "ABC Global Innovation Fund",
+    "schemeType": "Equity",
+    "fundType": "Regular Growth",
+    "nav": 0.00,
+    "investedValue": 800.00,
+    "currentValue": 0.00,
+    "freeUnits": 8000,
+    "lockedUnits": 0,
+    "investmentDate": "2022 10 13",
+    "investmentType": "Lumpsum",
+    "transactionDetails": "Paying For MF",
+    "debitOrCredit": "Credit",
+    "savingsAccountId": 1,
+    "mutualFundPortfolio": {
+        "id": 1
+    }
+}
+
+GET: localhost:8083/mutual-fund-portfolio/{mutualFundPortfolio-id}/mutual-funds
+
