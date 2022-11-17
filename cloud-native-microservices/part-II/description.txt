@@ -8,3 +8,4 @@ http://localhost:9091/savingsaccount/prod
 ​
 Let Savings Account Microservice to read properties from Config Server:
 http://localhost:8081/savings-account/customer-service/v1/
+http://localhost:8083/mutual-fund/customer-service/
