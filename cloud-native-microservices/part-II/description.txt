@@ -1,1 +1,10 @@
 Microservices and Spring Cloud Config Server - Externalized Configuration in a Distributed System (Configurations Management in Microservices)
+
+Test Spring Cloud Config server & Reading configurations from a GitHub repository:
+http://localhost:9091/savingsaccount/default
+http://localhost:9091/savingsaccount/dev
+http://localhost:9091/savingsaccount/prod
+
+​
+Let Savings Account Microservice to read properties from Config Server:
+http://localhost:8081/savings-account/customer-service/v1/
