@@ -11,3 +11,7 @@ http://localhost:8081/savings-account/customer-service/v1/
 
 Let Mutual Fund Microservice to read properties from Config Server:
 http://localhost:8083/mutual-fund/customer-service/
+
+
+Check for changes in the Git Repository using the Spring Boot Actuator Endpoint URL 'localhost:8081/actuator/refresh' 
+NOTE: Use Postman with POST HTTP method
