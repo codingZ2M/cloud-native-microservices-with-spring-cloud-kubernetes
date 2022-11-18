@@ -10,6 +10,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Configuration
+//Loading all properties from the given file
+//Once the particular property file loaded, reading all the properties with prefix value of "savingsaccount"
 @ConfigurationProperties(prefix = "savingsaccount")
 @Getter @Setter @ToString
 public class SavingsAccountServiceConfig {
