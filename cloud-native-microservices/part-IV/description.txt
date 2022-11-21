@@ -1,1 +1,2 @@
-Making Microservices Resilient
+ Making Microservices Resilient - Handling Failures Gracefully with Fallback Mechanism using RESILIENCE4J Fault Tolerance Library 
+ by Implementing Circuit Breaker Pattern
