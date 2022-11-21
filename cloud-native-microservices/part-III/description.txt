@@ -19,12 +19,13 @@ http://localhost:8070/eureka/apps/savingsaccount
 http://localhost:8070/eureka/apps/mutualfund
 http://localhost:8070/eureka/apps/payment-transaction
 
-Degistration from Eureka server gracefully when microservices shutdown:
+Dregistration from Eureka server gracefully when microservices shutdown:
 For example, check all the available Actuator Endpoints for savingsaccount microservice
 http://192.168.100.6:8081/actuator/
 Then, shut down the service using the following endpoint with HTTP POST method
 http://192.168.100.6:8081/actuator/shutdown
 Note: Check your application console & Eureka Server dashboard.
 
-
+Sending Heart Beats o Eureka Server from Client Microservices:
+Note: Stop the Eureka Server then you will see that your miroservices are not able to send heart beats to Eureka server.
 
