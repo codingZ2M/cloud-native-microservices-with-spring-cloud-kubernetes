@@ -1,0 +1,30 @@
+Microservice Registration and Discovery with Spring Cloud and Netflix's Eureka
+
+Spring Cloud Netflix - Netflix OSS integrations for Spring Boot Apps, including Service Discovery (Eureka).
+Service Discovery in Microservice Architecture - Server-Side Service Discovery Pattern
+Netflix's Eureka Server is using Spring Cloud Load Balancer for load balancing
+
+Note: Add servicediscovery.properties in the Git Repository and mention the spring cloud config server location to identify the file "servicediscovery.properties" in the config server.
+
+
+Make changes for microservices to register with Eureka Server & let them to send heart beats to indicate their health status
+- Add netflix-eureka-client dependency 
+- Add properties in the application.properties to registering Spring Boot service microservice into Eureka Server
+
+Start Eureka Server and all your microservices & check Eureka dashboard for all the Instances currently registered with Eureka
+Eureka Server - http://localhost:8070/
+
+Check all the details of the registered instances of your microservices inside Eureka Server
+http://localhost:8070/eureka/apps/savingsaccount
+http://localhost:8070/eureka/apps/mutualfund
+http://localhost:8070/eureka/apps/payment-transaction
+
+Degistration from Eureka server gracefully when microservices shutdown:
+For example, check all the available Actuator Endpoints for savingsaccount microservice
+http://192.168.100.6:8081/actuator/
+Then, shut down the service using the following endpoint with HTTP POST method
+http://192.168.100.6:8081/actuator/shutdown
+Note: Check your application console & Eureka Server dashboard.
+
+
+
