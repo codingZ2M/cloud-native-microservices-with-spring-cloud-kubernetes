@@ -6,4 +6,5 @@
 Add resilience4j-spring-boot2, resilience4j-circuitbreaker, resilience4j-timelimiter, spring-boot-starter-aop dependencies.
 Add the configurations for the Circuit Breaker patterns in the application.properties.
 
-And, then apply the Circuit Breaker patterns in the required controller methods which are handling REST API calls and also create Fallback methods to send fast response when Circuit Breaker is open during failures.
+And, then apply the Circuit Breaker patterns in the required controller methods which are handling REST API calls and also create Fallback methods
+to send fast response when Circuit Breaker is open during failures.
