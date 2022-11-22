@@ -63,11 +63,11 @@ public class SavingsAccountServiceImpl implements SavingsAccountService {
 		if (totalCurrentValue > mutualFundAmonunt) {
 			totalCurrentValue -= mutualFundAmonunt;
 			fundTransactionState = true;
+			savingsAccountRepository.updateSavingsAccount(savingsAccountId, totalCurrentValue);
 		  }
 		else {
 			fundTransactionState = false;
 		 }		
-		savingsAccountRepository.updateSavingsAccount(savingsAccountId, totalCurrentValue);
 		return fundTransactionState;
 	}
 
