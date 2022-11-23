@@ -1,0 +1,6 @@
+Handling Routing & Cross-Cutting Concerns in Spring Boot Microservices - Building API Gateways
+Spring Cloud Gateway - An effective way to route to APIs and provide cross cutting concerns.
+What is Spring Cloud Gateway?
+1.) Create a Spring Cloud Gateway ( A Spring Boot Application) by adding the required dependencies and enabling the required properties in the applications.properties.
+2.) Add gatewayserver.properties in the Git Repository and mention the spring cloud gateway server location to identify the file "gatewayserver.properties" 
+in the config server.
