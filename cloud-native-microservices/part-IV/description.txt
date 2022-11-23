@@ -17,3 +17,5 @@ And, then open the endpoint, http://localhost:8083/actuator/circuitbreakers and
 
 Monitor the Events which are happening inside Circuit Breaker, open the Endpoint..
 http://localhost:8083/actuator/circuitbreakerevents/{name}
+
+Send 6 (At least 5 calls must be recorded) requests to MutualFund service to create a new Mutual Fund, after sending 5 requests, track the events of circuit breaker at http://localhost:8083/actuator/circuitbreakerevents/mutualFundProcessState
