@@ -8,3 +8,12 @@ Add the configurations for the Circuit Breaker patterns in the application.prope
 
 And, then apply the Circuit Breaker patterns in the required controller methods which are handling REST API calls and also create Fallback methods
 to send fast response when Circuit Breaker is open during failures.
+
+Testing:
+Start Eureka Server, Spring Config Server and your MutualFund microservice but but the SavingsAccount microservice, send a request to create a new Mutual Fund and see how Circuit Breaker is handling failures gracefully with fallback mechanism behind the scene.
+
+Open the Actuator hosted on the Mutual Fund microservice, at http://localhost:8083/actuator
+And, then open the endpoint, http://localhost:8083/actuator/circuitbreakers and see all the circuit breakers that are registered.
+
+Monitor the Events which are happening inside Circuit Breaker, open the Endpoint..
+http://localhost:8083/actuator/circuitbreakerevents/{name}
