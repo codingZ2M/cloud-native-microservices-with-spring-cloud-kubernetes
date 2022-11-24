@@ -80,6 +80,6 @@ GET: http://localhost:8072/MUTUALFUND/mutual-fund/customer-service
 GET: http://localhost:8072/SAVINGSACCOUNT/savings-account/customer-service/v1
 ----------------------------------------------------------------------------------------------------------------------------
 Implementing Custom Routing using Spring Cloud Gateway
-POST: localhost:8072/z2m/MUTUALFUND/mutual-fund-portfolio
-POST: localhost:8072/z2m/MUTUALFUND/mutual-fund
+POST: localhost:8072/codingz2m/MUTUALFUND/mutual-fund-portfolio
+POST: localhost:8072/codingz2m/MUTUALFUND/mutual-fund
 
