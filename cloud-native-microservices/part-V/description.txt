@@ -6,3 +6,80 @@ What is Spring Cloud Gateway?
 3.) Enable @EnableEurekaClient to fetch all the details from Eureka Server.
 
 Note: Start Spring Cloud Config Server, Eureka Server and all your microservices and then start the Spring Cloud Gateway Server.
+
+Actuator URL's exposed, related to Spring Cloud Gateway, at http://localhost:8072/actuator and then check what kind of routing configurations, Spring cloud Gateway considers at http://localhost:8072/actuator/gateway/routes
+
+Invoking the microservices with the help of "Gateway Server" using logical names:
+================================================================
+savings-account service
+----------------------
+POST: localhost:8072/SAVINGSACCOUNT/savings-account/v1
+{
+    "holderName":"Raj",
+    "accountType":"Classic Checking",
+    "annualPercentageYield":"25.00",
+    "minimumBalanceToAvailAPY": "5001",
+    "minimumBalanceToOpenAccount": "5001",
+    "currentValue":"9000"	
+}
+GET: localhost:8072/SAVINGSACCOUNT/savings-account/all/v1
+
+POST: localhost:8072/SAVINGSACCOUNT/savings-account/getSavingsAccount/v1
+
+{
+    "id": 1
+}
+
+POST: localhost:8072/SAVINGSACCOUNT/savings-account/payment-transaction
+{
+    "transactionDate": "18-12-22",
+    "transactionDetails": "Self Deposit",
+    "amount": 1300.00,
+    "debitOrCredit": "Credit",
+    "savingsAccountId": 1
+}
+GET: localhost:8072/SAVINGSACCOUNT/savings-account/{savings-account-id}/payment-transactions
+==============================================================================================================
+
+
+Mutual Fund
+-------------
+POST: localhost:8072/MUTUALFUND/mutual-fund-portfolio
+{
+    "holderName": "Rick",
+    "totalInvestedValue": 0.00,
+    "totalCurrentValue": 0.00,
+    "gainOrLoss": 0.00
+}
+
+POST: localhost:8072/MUTUALFUND/mutual-fund
+{
+    "fundName": "ABC Global Innovation Fund",
+    "schemeType": "Equity",
+    "fundType": "Regular Growth",
+    "nav": 0.00,
+    "investedValue": 800.00,
+    "currentValue": 0.00,
+    "freeUnits": 8000,
+    "lockedUnits": 0,
+    "investmentDate": "2022 10 13",
+    "investmentType": "Lumpsum",
+    "transactionDetails": "Paying For MF",
+    "debitOrCredit": "Credit",
+    "savingsAccountId": 1,
+    "mutualFundPortfolio": {
+        "id": 1
+    }
+}
+
+GET: localhost:8072/MUTUALFUND/mutual-fund-portfolio/{mutualFundPortfolio-id}/mutual-funds
+
+-----------------------------------------------------------------------------------------------------------------------------
+Accessing Mutual Fund & Savings Account Info from Git Repo:
+http://localhost:8072/MUTUALFUND/mutual-fund/customer-service
+http://localhost:8072/SAVINGSACCOUNT/savings-account/customer-service
+----------------------------------------------------------------------------------------------------------------------------
+Implementing Custom Routing using Spring Cloud Gateway
+POST: localhost:8072/z2m/MUTUALFUND/mutual-fund-portfolio
+POST: localhost:8072/z2m/MUTUALFUND/mutual-fund
+
