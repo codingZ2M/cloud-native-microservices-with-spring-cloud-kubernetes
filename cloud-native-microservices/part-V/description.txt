@@ -83,3 +83,5 @@ Implementing Custom Routing using Spring Cloud Gateway
 POST: localhost:8072/codingz2m/MUTUALFUND/mutual-fund-portfolio
 POST: localhost:8072/codingz2m/MUTUALFUND/mutual-fund
 
+=================================================================================================================================
+
