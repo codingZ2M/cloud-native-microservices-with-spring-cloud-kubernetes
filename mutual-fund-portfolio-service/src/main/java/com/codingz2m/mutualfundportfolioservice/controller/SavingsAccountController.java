@@ -1,7 +1,5 @@
 package com.codingz2m.mutualfundportfolioservice.controller;
 
-import javax.validation.Valid;
-
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.slf4j.Logger;
@@ -25,6 +23,8 @@ import com.codingz2m.mutualfundportfolioservice.shared.SavingsAccountDTO;
 import com.codingz2m.mutualfundportfolioservice.ui.models.MutualFundPortfolioResponse;
 import com.codingz2m.mutualfundportfolioservice.ui.models.SavingsAccountRequest;
 import com.codingz2m.mutualfundportfolioservice.ui.models.SavingsAccountResponse;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/savings-account")

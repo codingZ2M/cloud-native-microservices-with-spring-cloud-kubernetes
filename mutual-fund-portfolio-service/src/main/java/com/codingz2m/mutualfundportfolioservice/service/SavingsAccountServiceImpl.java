@@ -1,7 +1,6 @@
 package com.codingz2m.mutualfundportfolioservice.service;
 
 import java.util.Optional;
-import javax.transaction.Transactional;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
@@ -12,6 +11,8 @@ import com.codingz2m.mutualfundportfolioservice.repository.MutualFundPortfolio;
 import com.codingz2m.mutualfundportfolioservice.repository.SavingsAccount;
 import com.codingz2m.mutualfundportfolioservice.repository.SavingsAccountRepository;
 import com.codingz2m.mutualfundportfolioservice.shared.SavingsAccountDTO;
+
+import jakarta.transaction.Transactional;
 
 @Service (value="savingsAccountService")
 @Transactional 

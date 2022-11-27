@@ -1,11 +1,10 @@
 package com.codingz2m.mutualfundportfolioservice.ui.models;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Null;
-
 import com.codingz2m.mutualfundportfolioservice.repository.MutualFundPortfolio;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Null;
 import lombok.Getter;
 import lombok.Setter;
 

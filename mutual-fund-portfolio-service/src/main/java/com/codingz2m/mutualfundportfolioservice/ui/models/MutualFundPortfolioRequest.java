@@ -1,12 +1,12 @@
 package com.codingz2m.mutualfundportfolioservice.ui.models;
 
-import javax.validation.constraints.Null;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
 import org.springframework.stereotype.Component;
 
 import com.codingz2m.mutualfundportfolioservice.repository.SavingsAccount;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Null;
 import lombok.Getter;
 import lombok.Setter;
 

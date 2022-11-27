@@ -1,7 +1,5 @@
 package com.codingz2m.mutualfundportfolioservice.controller;
 
-import javax.validation.Valid;
-
 import org.springframework.http.HttpStatus;
 
 import org.springframework.http.ResponseEntity;
@@ -22,6 +20,8 @@ import com.codingz2m.mutualfundportfolioservice.service.MutualFundService;
 import com.codingz2m.mutualfundportfolioservice.shared.MutualFundDTO;
 import com.codingz2m.mutualfundportfolioservice.ui.models.MutualFundRequest;
 import com.codingz2m.mutualfundportfolioservice.ui.models.MutualFundResponse;
+
+import jakarta.validation.Valid;
 
 import org.springframework.web.bind.annotation.RequestBody;
 
