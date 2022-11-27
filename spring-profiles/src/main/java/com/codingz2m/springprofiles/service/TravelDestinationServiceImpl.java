@@ -3,8 +3,6 @@ package com.codingz2m.springprofiles.service;
 import java.util.List;
 import java.util.Optional;
 
-import javax.transaction.Transactional;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +12,8 @@ import com.codingz2m.springprofiles.controllers.TravelDestinationController;
 import com.codingz2m.springprofiles.entity.TravelDestination;
 import com.codingz2m.springprofiles.exception.TravelDestinationNotFoundException;
 import com.codingz2m.springprofiles.repository.TravelDestinationRepository;
+
+import jakarta.transaction.Transactional;
 
 @Service (value="tds")
 @Transactional

@@ -2,7 +2,7 @@ package com.codingz2m.springprofiles.controllers;
 
 import java.util.List;
 
-import javax.validation.Valid;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,6 +23,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.codingz2m.springprofiles.entity.TravelDestination;
 import com.codingz2m.springprofiles.exception.TravelDestinationNotFoundException;
 import com.codingz2m.springprofiles.service.TravelDestinationService;
+
+import jakarta.validation.Valid;
 
 
 @RestController
