@@ -22,6 +22,7 @@ public interface TravelDestinationRepository extends CrudRepository<TravelDestin
 	  @Query("SELECT td FROM TravelDestination td WHERE td.country = :country")
 	 List<TravelDestination> findByCountry( @Param("country") String country); // Custom method...
 	
+
 	//  List<TravelDestination> findByCountry(  String country); // C
 		
 		// Custom Queries with @Query Annotation
