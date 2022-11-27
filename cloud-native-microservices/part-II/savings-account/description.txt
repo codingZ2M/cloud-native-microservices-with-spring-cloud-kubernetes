@@ -1,2 +1,0 @@
-Spring Boot Microservice (savings-account) using Spring Cloud with advanced REST API Features
- Externalized Configuration in a Distributed System (Configurations Management in Microservices)
