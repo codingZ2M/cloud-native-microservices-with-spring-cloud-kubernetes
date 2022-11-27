@@ -1,2 +1,0 @@
-Spring Boot Microservice (payment-transaction) using Spring Cloud with advanced REST API Features
-Building a REST Client with Spring Cloud OpenFeign(Declarative REST Client) to invoke services over HTTP.
