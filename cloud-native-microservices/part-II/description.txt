@@ -7,14 +7,14 @@ http://localhost:9091/savingsaccount/prod
 
 ​
 Let Savings Account Microservice to read properties from Config Server based on the active profile:
-http://localhost:8081/savings-account/customer-service/v1/
+http://localhost:8081/savings-account/customer-service/v1
 
 Let Mutual Fund Microservice to read properties from Config Server based on the active profile:
-http://localhost:8083/mutual-fund/customer-service/
+http://localhost:8083/mutual-fund/customer-service
 
 
 Check for changes in the Git Repository using the Spring Boot Actuator Endpoint URL 'localhost:8081/actuator/refresh' 
 NOTE: Use Postman with POST HTTP method
 
 Let Savings Account Microservice to read the updated properties from Config Server without restarting the services
-http://localhost:8081/savings-account/customer-service/v1/
+http://localhost:8081/savings-account/customer-service/v1
