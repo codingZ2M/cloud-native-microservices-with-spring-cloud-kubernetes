@@ -1,7 +1,0 @@
-Spring Boot Microservice (payment-transaction) using Spring Cloud with advanced REST API Features
-Externalized Configuration in a Distributed System (Configurations Management in Microservices)
-
-Microservice Registration and Discovery with Spring Cloud and Netflix's Eureka
-
-Making Microservices Resilient - Handling Failures Gracefully with Fallback Mechanism using 
-RESILIENCE4J Fault Tolerance Library by Implementing Circuit Breaker Pattern
