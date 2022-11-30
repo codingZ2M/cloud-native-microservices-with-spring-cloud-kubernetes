@@ -1,0 +1,31 @@
+Implementing Distributed Tracing & Log Aggregation using Spring Cloud Sleuth & Zipkin:
+
+Spring Cloud Sleuth
+​Easy Distributed Tracing with Spring Cloud Sleuth
+
+Zipkin
+Distributed Tracing: - Monitoring a chain calls
+
+How do we know till which point, your request has been processed (Tracing)?
+What is the time, this request takes to process at each layer?
+
+Log Aggregation:
+Instead of checking logs of each service that we have inside our microservice architecture, use Log Aggregators to collect all logs from various microservices. (Single Point of View)
+
+NOTE: Spring Cloud Sleuth adds <App Name> <Trace ID> <Span ID> to all the logs written by the microservices.
+
+Implementing Distributed tracing with Spring Cloud Sleuth:
+1.) Add the Spring Cloud Sleuth dependency in the pom.xml of your microservices, Spring Cloud Config Server, Spring Cloud Gateway Server and Eureka Server.
+
+<dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-sleuth</artifactId>
+        <version>3.1.5</version>
+ </dependency>
+
+2.) Add the logger statements inside your microservices and ensure Sleuth is adding Trace ID and Span ID into the loggers.
+3.) Start Spring Cloud Config Server, Eureka Server and all your microservices and then start the Spring Cloud Gateway Server.
+
+Testing:
+Send a request to MutualFund service to create a new Mutual Fund, which in-turn sends a request SavingsAccount.
+And observe the logger statements of Spring Gateway Server, MutualFund and SavingsAccount services that got generated with help of Spring Cloud Sleuth.
