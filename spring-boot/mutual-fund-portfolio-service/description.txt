@@ -1,4 +1,4 @@
-Diving Deep Into Spring Data JPA, Hibernate BI & UNI Directional O/R Mappings & Querying JPA Entities with JPQL using @Query (CRUD):
+Diving Deep Into Spring Data JPA, Hibernate BI & UNI Directional O/R Mappings & Querying JPA Entities with JPQL using @Query (CRUD) - Accessing Data in a Relational Database
 
 Building Data-Driven REST Spring Boot service to communicate with other products and services without having to know how they’re implemented.
 Using an object/relational mapping facility for managing relational data in Java applications with JPA,  Implementing JPA based repositories
