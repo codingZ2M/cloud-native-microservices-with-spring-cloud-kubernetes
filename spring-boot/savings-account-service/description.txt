@@ -1,0 +1,9 @@
+ Building Stand-Alone, Production-Grade Spring Based Spring Boot (3.0.0)  CRUD REST API with MongoDB Atlas (Multi-Cloud Database) - 
+ Accessing Data from MongoDB Document Database.
+ 
+ Creating Spring Boot CRUD REST API with Spring Data MongoDB, Using Query and Projection Operators in MongoDB, MongoDB and Spring Boot interaction 
+ using the MongoTemplate (Aggregation, Aggregation with Projection, Pagination) class and MongoRepository (CRUD) interface. MongoDB Associations
+ - Model One-to-One, One-to-Many Relationships. Creating custom queries with Criteria. Exploring default Logging options available in Spring Boot, 
+ Applying Global Exception Handling mechanism, Exposing Endpoints and let our service to communicate with other products and services and Configuring
+ Auto Generation of Swagger Documentation.
+ 
