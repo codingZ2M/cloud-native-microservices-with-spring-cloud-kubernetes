@@ -1,0 +1,16 @@
+server:
+  port: 8081
+  
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://cz2m:root@codingz2m.z9rfxgw.mongodb.net/?retryWrites=true&w=majority
+      database: banking-spring-boot
+      
+  application:
+    name: Savings Account Service
+
+
+    
+
+
