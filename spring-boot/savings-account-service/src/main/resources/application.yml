@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://cz2m:root@codingz2m.z9rfxgw.mongodb.net/?retryWrites=true&w=majority
+      uri: your mogo db url
       database: banking-spring-boot
       
   application:
